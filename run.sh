@@ -58,6 +58,23 @@ else
 	echo -e "${red}${bold}RETARD${none}\n"
 fi
 
+#-----------------------%_SPECIFIER----------------------
+
+gcc -w %_main_ft.c libftprintf.a  && ./a.out > mine.txt
+
+gcc -w %_main.c libftprintf.a && ./a.out > theirs.txt
+
+echo -e "${purple}${underline}${bold}%_SPECIFIER${none}\n"
+
+DIFF=$(diff mine.txt theirs.txt)
+
+if [ "$DIFF" == "" ]
+then
+	echo -e "${green}${bold}SUCCESS${none}\n"
+else
+	echo -e "${red}${bold}RETARD${none}\n"
+fi
+
 #-----------------------U_SPECIFIER----------------------
 
 gcc -w u_main_ft.c libftprintf.a  && ./a.out > mine.txt
@@ -75,13 +92,31 @@ else
 	echo -e "${red}${bold}RETARD${none}\n"
 fi
 
+
+#-----------------------Xx_SPECIFIER----------------------
+
+gcc -w Xx_main_ft.c libftprintf.a  && ./a.out > mine.txt
+
+gcc -w Xx_main.c libftprintf.a && ./a.out > theirs.txt
+
+echo -e "${purple}${underline}${bold}X_SPECIFIER${none}\n"
+
+DIFF=$(diff mine.txt theirs.txt)
+
+if [ "$DIFF" == "" ]
+then
+	echo -e "${green}${bold}SUCCESS${none}\n"
+else
+	echo -e "${red}${bold}RETARD${none}\n"
+fi
+
 #-----------------------X_SPECIFIER----------------------
 
 gcc -w x_main_ft.c libftprintf.a  && ./a.out > mine.txt
 
 gcc -w x_main.c libftprintf.a && ./a.out > theirs.txt
 
-echo -e "${purple}${underline}${bold}X_SPECIFIER${none}\n"
+echo -e "${purple}${underline}${bold}x_SPECIFIER${none}\n"
 
 DIFF=$(diff mine.txt theirs.txt)
 

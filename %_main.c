@@ -13,7 +13,7 @@ int main()
             printf("\n\n");
 			printf("\033[0;33m[]\033[0m");
             printf("[%d]--[%d]\n", i, j);
-            x = printf("|%*.*c|", i, j, 'a');
+            x = printf("|%*.*%|", i, j);
             printf("\nreturn : %d\n", x);
             j++;
         }
@@ -29,7 +29,7 @@ int main()
 			printf("\n\n");
 			printf("\033[0;33m[0]\033[0m");
 			printf("[%d]--[%d]\n", i, j);
-			x = printf("|%0*.*c|", i, j, 'a');
+			x = printf("|%0*.*%|", i, j);
 			printf("\nreturn : %d\n", x);
 			j++;
 		}
@@ -45,7 +45,7 @@ int main()
 			printf("\n\n");
 			printf("\033[0;33m[-]\033[0m");
 			printf("[%d]--[%d]\n", i, j);
-			x = printf("|%-*.*c|", i, j, 'a');
+			x = printf("|%-*.*%|", i, j);
 			printf("\nreturn : %d\n", x);
 			j++;
 		}
@@ -61,7 +61,7 @@ int main()
 			printf("\n\n");
 			printf("\033[0;33m[-0]\033[0m");
 			printf("[%d]--[%d]\n", i, j);
-			x = printf("|%-0*.*c|", i, j, 'a');
+			x = printf("|%-0*.*%|", i, j);
 			printf("\nreturn : %d\n", x);
 			j++;
 		}
