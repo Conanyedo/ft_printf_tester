@@ -5,7 +5,6 @@ int main()
 	int i,j,y,x;
 
     i = -5;
-	printf("%d\n", printf("%09.*d\n", -1, 22));
 	while (i < 5)
     {
         j = -5;
