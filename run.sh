@@ -21,7 +21,7 @@ if [ "$DIFF" == "" ]
 then
 	echo -e "${green}${bold}SUCCESS${none}\n"
 else
-	echo -e "${red}${bold}RETARD${none}\n"
+	echo -e "${red}${bold}Failed${none}\n"
 fi
 
 #-----------------------S_SPECIFIER----------------------
@@ -38,7 +38,7 @@ if [ "$DIFF" == "" ]
 then
 	echo -e "${green}${bold}SUCCESS${none}\n"
 else
-	echo -e "${red}${bold}RETARD${none}\n"
+	echo -e "${red}${bold}Failed${none}\n"
 fi
 
 #-----------------------C_SPECIFIER----------------------
@@ -55,7 +55,7 @@ if [ "$DIFF" == "" ]
 then
 	echo -e "${green}${bold}SUCCESS${none}\n"
 else
-	echo -e "${red}${bold}RETARD${none}\n"
+	echo -e "${red}${bold}Failed${none}\n"
 fi
 
 #-----------------------%_SPECIFIER----------------------
@@ -72,7 +72,7 @@ if [ "$DIFF" == "" ]
 then
 	echo -e "${green}${bold}SUCCESS${none}\n"
 else
-	echo -e "${red}${bold}RETARD${none}\n"
+	echo -e "${red}${bold}Failed${none}\n"
 fi
 
 #-----------------------U_SPECIFIER----------------------
@@ -89,7 +89,7 @@ if [ "$DIFF" == "" ]
 then
 	echo -e "${green}${bold}SUCCESS${none}\n"
 else
-	echo -e "${red}${bold}RETARD${none}\n"
+	echo -e "${red}${bold}Failed${none}\n"
 fi
 
 
@@ -107,7 +107,7 @@ if [ "$DIFF" == "" ]
 then
 	echo -e "${green}${bold}SUCCESS${none}\n"
 else
-	echo -e "${red}${bold}RETARD${none}\n"
+	echo -e "${red}${bold}Failed${none}\n"
 fi
 
 #-----------------------X_SPECIFIER----------------------
@@ -124,7 +124,7 @@ if [ "$DIFF" == "" ]
 then
 	echo -e "${green}${bold}SUCCESS${none}\n"
 else
-	echo -e "${red}${bold}RETARD${none}\n"
+	echo -e "${red}${bold}Failed${none}\n"
 fi
 
 rm ./a.out
